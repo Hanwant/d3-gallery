@@ -1,8 +1,9 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route, Link, NavLink } from 'react-router-dom'
+import { BrowserRouter as Router, Switch, Route, NavLink } from 'react-router-dom'
 import Stock from './stock';
 import TreeSimple from './tree_simple';
 import TreeCollapse from './tree_collapse';
+import Histogram from './histogram';
 import './App.css'
 
 
@@ -15,6 +16,7 @@ function NavBar(){
             <li><NavLink to="/tree_simple">Tree Simple</NavLink></li>
             <li><NavLink to="/tree_collapse">Tree Collapsible</NavLink></li>
             <li><NavLink to="/stock">Stock</NavLink></li>
+            <li><NavLink to="/histogram">Histogram</NavLink></li>
           </ul>
         </nav>
    </div>
@@ -23,6 +25,7 @@ function NavBar(){
 
 function D3Container(){
   return (
+    <div className="mainContainer">
         <Switch>
           <Route path="/stock">
             <Stock/>
@@ -33,7 +36,11 @@ function D3Container(){
           <Route path="/tree_collapse">
             <TreeCollapse/>
           </Route>
+          <Route path="/histogram">
+            <Histogram/>
+          </Route>
         </Switch>
+  </div>
   )
 }
 

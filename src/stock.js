@@ -144,7 +144,7 @@ const Stock = () => {
         <ul>
           {
             ['Line', 'Area', 'Band'].map((ctype, i) => {
-              return <li onClick={() => setChartType(ctype.toLowerCase())}>{ctype}</li>
+              return <li key={i} onClick={() => setChartType(ctype.toLowerCase())}>{ctype}</li>
             })
           }
         </ul>
