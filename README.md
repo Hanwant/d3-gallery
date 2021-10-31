@@ -1,4 +1,6 @@
-# Getting Started with Create React App
+# Gallery of d3 graphs
+
+For learning d3, how to integrate it with react, practicing the design patterns and compiling the results in one place.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
