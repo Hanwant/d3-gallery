@@ -1,4 +1,4 @@
-# Gallery of d3 graphs
+# Gallery of d3 visualisations
 
 For learning d3, how to integrate it with react, practicing the design patterns and compiling the results in one place.
 
